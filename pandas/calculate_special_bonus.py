@@ -11,7 +11,7 @@ def main():
     employees_df = pd.DataFrame(data)
     
     result_df = calculate_special_bonus(employees_df)
-    print(result_df)
+    print(result_df.to_string(index=False))
 
 
 def bonus_rule(row: pd.Series) -> int:
